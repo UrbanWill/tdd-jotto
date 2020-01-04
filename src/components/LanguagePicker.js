@@ -12,7 +12,9 @@ function LanguagePicker({ setLanguage }) {
       data-test="language-icon"
       key={lang.code}
       onClick={() => setLanguage(lang.code)}
-    ></span>
+    >
+      {lang.symbol}
+    </span>
   ));
 
   return <div data-test="component-language-picker">{languageIcons}</div>;

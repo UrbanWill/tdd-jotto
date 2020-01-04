@@ -20,7 +20,7 @@ const setup = ({ language, secretWord }) => {
   );
 };
 
-describe("quiz", () => {
+describe("languagePicker", () => {
   test("correctly renders submit in english", () => {
     const wrapper = setup({ language: "en" });
     const inputComponent = findByTestAttr(wrapper, "component-input");
