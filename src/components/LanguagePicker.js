@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 
 function LanguagePicker({ setLanguage }) {
   const languages = [
-    { code: "en", symbol: "🇺🇸" },
+    { code: "en", symbol: "english" },
     { code: "emoji", symbol: "😊" }
   ];
 
@@ -12,6 +12,7 @@ function LanguagePicker({ setLanguage }) {
       data-test="language-icon"
       key={lang.code}
       onClick={() => setLanguage(lang.code)}
+      style={{ cursor: "pointer" }}
     >
       {lang.symbol}
     </span>
